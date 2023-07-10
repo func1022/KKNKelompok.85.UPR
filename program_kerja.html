@@ -25,85 +25,12 @@
     <style type="text/css">
     
 /*    <!-- css buatan sendiri -->*/
+
     <style type="text/css">
-    #fuanni{
-      width: 15rem;
-      height: auto;
-      border-radius: 50%;
+    .table-dark tbody td:nth-child(3),
+    .table-dark tbody td:nth-child(4) {
+      word-wrap: break-word;
     }
-
-
-      .slider-area {
-        border-radius: 1rem;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 2rem;
-      }
-
-      .slider-area::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size:;
-        z-index: -1;
-        opacity: 0.7;
-      }
-
-      .slider-area video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-
-
-      }
-
-      #background-video{
-        object-fit: cover;
-      }
-
-      @keyframes loop-video {
-        0% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @media (max-width: 767px) {
-        .slider-area video {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .slider-area{
-        background-size: cover;
-      }
-
-
-      .slider-area::before {
-        animation: loop-video 10s linear infinite;
-      }
-
-      .TulisanPertama{
-        color: white;
-        padding: 0.5rem;
-        font-size: 3rem;
-      }
-      .TulisanKedua{
-        color: white;
-        font-size: 2rem;
-      }
-      .spanwarnaorange{
-        color: orange;
-      }
-
     </style>
   </head>
   <body>
@@ -184,13 +111,6 @@
               <span class="menu-title">Profil Anggota</span>
               <!-- <i class="menu-arrow"></i> -->
             </a>
-           <!--  <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div> -->
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="program_kerja.html">
@@ -239,66 +159,6 @@
             </button>
 
             <ul class="navbar-nav navbar-nav-right">
-              <!-- <li class="nav-item dropdown d-none d-lg-block">
-                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Menu</a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
-                  <h6 class="p-3 mb-0"><a href="index.html">Home</a></h6>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-layers text-danger"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1"> <a href="pages/fun/profil_anggota.html">Profil Anggota</a> </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-layers text-danger"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1"> <a href="pages/fun/program_kerja.html">Program Kerja</a> </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-layers text-danger"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1"> <a href="pages/fun/kegiatan.html">Kegiatan</a> </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-layers text-danger"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1"><a href="pages/fun/dokumentasi.html">Dokumentasi</a></p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-layers text-danger"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1"><a href="pages/fun/contact.html">Contact</a></p>
-                    </div>
-                  </a>
-              </li> -->
 
               <li class="nav-item dropdown border-left">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
@@ -356,374 +216,57 @@
 
         <div class="main-panel">
           <div class="content-wrapper">
-            <!-- Background Awal -->
+            <div class="page-header">
+              <h3 class="page-title" style="font-size: 2rem;"> Program Kerja </h3>
+            </div>
             <div class="row">
-              <!-- Content Section Pertama -->
-              <div class="slider-area" style="width:100%;height: 30rem;">
-                <video id="background-video" loop muted>
-                  <source src="assets/images/fun/video-bg.mp4" type="video/mp4">
-                </video>
-                <div class="slider-active">
-                  <div class="single-slider hero-overly slider-height d-flex align-items-center">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-xl-9 col-lg-9 col-md-9">
-                          <div class="hero__caption">
-                            <h1 class="TulisanPertama" style="margin-top:2rem">Welcome To..</h1>
-                            <h2 class="TulisanKedua">Kelompok <span class="spanwarnaorange">85</span> </h2>
-                            <p class="TulisanKetiga">KKN Reguler Periode 1 Universitas Palangka Raya</p>
-                            <p class="TulisanKetiga">Desa Bukit Liti, Kec. Kahayan Tengah, Kab. Pulang Pisau</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-            </div>
-             <!-- Pengurus Inti -->
-            <div class="row justify-content-center">
-              <div class="col-md-12">
-                <h4 class="spanwarnaorange" style="text-align:center;font-size: 2rem;">DOSEN PENDAMPING LAPANGAN</h4>
-              </div>
-            </div>
-            <!-- DPL -->
-            <div class="row justify-content-center">
-              <div class="col-md-4 grid-margin stretch-card">
+              <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <img src="assets/images/fun/anggota/.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Ariesta Lestari, S.Kom., M.Cs., Ph.D</h4>
-                        <p class="spanwarnaorange">Fakultas Teknik</p>
-                      </div>
+                    <!-- <h4 class="card-title">Aktivitas</h4> -->
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th> No </th>
+                            <th> Hari/Tanggal </th>
+                            <th> Kegiatan </th>
+                            <th> Keterangan </th>
+                            <th> Dokumentasi </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> 1 </td>
+                            <td> Hari, .... Juni 2023 <br> s/d <br> Hari, .... Juli 2023 </td>
+                            <td> Pendidikan: PAUD dan SD </td>
+                            <td> ......</td>
+                            <td>
+                              <button class="btn btn-primary" onclick="showImage('assets/images/fun/dokumentasi/D1.jpg')">1</button>
+                              <button class="btn btn-primary" onclick="showImage('assets/images/fun/dokumentasi/D2.jpg')">2</button>
+                              <button class="btn btn-primary" onclick="showImage('assets/images/fun/dokumentasi/D3.png')">3</button> <br> <br>
+                              <button class="btn btn-primary" onclick="showImage('assets/images/fun/dokumentasi/D4.png')">4</button>
+                              <button class="btn btn-primary" onclick="showImage('assets/images/fun/dokumentasi/D5.png')">5</button>
+                              <button class="btn btn-primary" onclick="showImage('assets/images/fun/dokumentasi/D6.png')">6</button>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Pengurus Inti -->
-            <div class="row justify-content-center">
-              <div class="col-md-12">
-                <h4 class="spanwarnaorange" style="text-align:center;font-size: 2rem;">PENGURUS INTI</h4>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">KETUA</h4>
-                    <img src="assets/images/fun/anggota/Fuanni.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Fuanni</h4>
-                        <p class="spanwarnaorange">Fakultas Ekonomi Bisnis</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">SEKRETARIS</h4>
-                    <img src="assets/images/fun/anggota/aulia.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Aulia Putri</h4>
-                        <p class="spanwarnaorange">Fakultas Keguruan dan Ilmu Pendidikan</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">BENDAHARA</h4>
-                    <img src="assets/images/fun/anggota/mona.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Mona Elisa</h4>
-                        <p class="spanwarnaorange">Fakultas Ekonomi Bisnis</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">KOOR. ACARA</h4>
-                    <img src="assets/images/fun/anggota/ricky.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Ricky Triady</h4>
-                        <p class="spanwarnaorange">Fakultas Teknik</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">KOOR. KOMINFO</h4>
-                    <img src="assets/images/fun/anggota/nueng.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Luhelwan Nueng</h4>
-                        <p class="spanwarnaorange">Fakultas Pertanian</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">KOOR. PERLENGKAPAN</h4>
-                    <img src="assets/images/fun/anggota/supi.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Ahmat Supiani</h4>
-                        <p class="spanwarnaorange">Fakultas Keguruan dan Ilmu Pendidikan</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-               <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">KOOR. KONSUMSI</h4>
-                    <img src="assets/images/fun/anggota/eldra.jpeg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Eldra Tiari</h4>
-                        <p class="spanwarnaorange">Fakultas Ekonomi Bisnis</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title" style="text-align:center;">KOOR. KESEHATAN</h4>
-                    <img src="assets/images/fun/anggota/tria.jpg" style="width: 100%; height: auto; border-radius: 1rem;">
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-center" style="padding-left: 1rem;">
-                        <h4 class="mb-1">Tria Dewi</h4>
-                        <p class="spanwarnaorange">Fakultas Keguruan dan Ilmu Pendidikan</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Peraturan dan Tata Tertib -->
-            <div class="row justify-content-center">
-              <div class="col-md-12">
-                <h4 class="spanwarnaorange" style="text-align:center;font-size: 2rem;">PERATURAN DAN TATA TERTIB</h4>
-              </div>
-            </div>
-
-            <div class="row justify-content-center" style="margin-bottom: 1rem;">
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">1. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Seluruh anggota <span class="spanwarnaorange">Wajib</span> mengikuti kegiatan, kecuali SAKIT</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">2. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Dalam sebulan hanya boleh izin <span class="spanwarnaorange">MAKSIMAL</span> sebanyak 2 Kali/2 Hari (Kecuali dengan alasan tertentu)</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">3. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Jika ada anggota Izin <span class="spanwarnaorange">Wajib</span> melaporkan kepada KETUA Kelompok sehari sebelumnya </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">4. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Jika ada anggota mengalami <span class="spanwarnaorange">Sakit</span> harap secepatnya melaporkan kepada KETUA Kelompok </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">5. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Seluruh anggota <span class="spanwarnaorange">Wajib</span> mengisi Absensi kehadiran setiap harinya di web KKN. </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">6. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Seluruh anggota <span class="spanwarnaorange">Wajib</span> menjaga etika saat berada di lokasi KKN</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">7. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Seluruh anggota <span class="spanwarnaorange">Wajib</span> menerapkan 5S (Senyum, Sapa, Salam, Sopan, Santun)</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">8. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Batas Tanggungjawab KETUA kelompok hanya pada Jam kerja, lewat dari jam kerja sudah bukan tanggungjawab dari ketua kelompok</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">9. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">Jangan berisik dan membuat <span class="spanwarnaorange">kegaduhan</span> saat malam hari</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 justify-content-center" style="margin-bottom: 1rem;">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="">
-                        <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">10. </h2>
-                        </div>
-                        <h6 class="text-muted font-weight-normal">10. <span class="spanwarnaorange">Wajib</span> menyetorkan iuran konsumsi sebesar Rp.50.000/minggu</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-
-            <!-- Aktivitas -->
-            <div class="row justify-content-center">
-              <div class="col-md-12">
-                <h4 class="spanwarnaorange" style="text-align:center;font-size: 2rem;">Ours Activity</h4>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title"></h4>
-                    <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
-                      <div class="item">
-                        <img src="assets/images/dashboard/Rectangle.jpg" alt="">
-                        <div class="caption">Keterangan Gambar 1</div>
-                      </div>
-                      <div class="item">
-                        <img src="assets/images/dashboard/Img_5.jpg" alt="">
-                        <div class="caption">Keterangan Gambar 2</div>
-                      </div>
-                      <div class="item">
-                        <img src="assets/images/dashboard/img_6.jpg" alt="">
-                        <div class="caption">Keterangan Gambar 3</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <!-- partial -->
         </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-            </div>
-          </footer>
+          
           <!-- partial -->
         </div>
       </div>
@@ -767,44 +310,16 @@
     <script src="assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
     <!-- JS Buatan Sendiri -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script type="text/javascript">
-      var video = document.getElementById("background-video");
-
-        video.addEventListener('ended', function() {
-          video.currentTime = 0;
-          video.play();
+      function showImage(imagePath) {
+        Swal.fire({
+          title: 'Dokumentasi',
+          html: `<img src="${imagePath}" alt="Dokumentasi" style="max-width: 100%">`,
+          showCloseButton: true,
+          showConfirmButton: false,
         });
-
-        video.play();
-
-      function setVideoDimensions() {
-      var video = document.getElementById('background-video');
-      var videoContainer = video.parentNode;
-      
-      var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      
-      var videoWidth, videoHeight;
-      
-      if (windowWidth / windowHeight > video.videoWidth / video.videoHeight) {
-        videoWidth = windowWidth;
-        videoHeight = windowWidth * (video.videoHeight / video.videoWidth);
-      } else {
-        videoWidth = windowHeight * (video.videoWidth / video.videoHeight);
-        videoHeight = windowHeight;
       }
-      
-      video.style.width = videoWidth + 'px';
-      video.style.height = videoHeight + 'px';
-      videoContainer.style.width = videoWidth + 'px';
-      videoContainer.style.height = videoHeight + 'px';
-    }
-
-    window.addEventListener('resize', setVideoDimensions);
-    setVideoDimensions();
-
-
-
 
     </script>
 
